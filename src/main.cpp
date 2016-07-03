@@ -1,4 +1,3 @@
-#include <exception>
 #include <iostream>
 #include <memory>
 
@@ -6,7 +5,6 @@
 #include <baseapi.h>
 
 int main(int argc, char *argv[])
-try
 {
     if (argc == 1)
         return 1;
@@ -43,9 +41,4 @@ try
     pixDestroy(&pixs);
 
     return 0;
-}
-catch (const std::exception &e)
-{
-    std::cerr << e.what() << std::endl;
-    return 1;
 }
