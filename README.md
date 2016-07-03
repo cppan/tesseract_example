@@ -22,3 +22,10 @@ mkdir build && cd build
 cmake ..
 cmake --build . --config Release
 ```
+
+## Testing
+
+Download tesseract english data to `tessdata` dir near the `main` binary, copy test image `img/phototest.tif` and run
+```
+main phototest.tif
+```
