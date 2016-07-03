@@ -21,5 +21,5 @@ cppan
 mkdir build && cd build
 cmake ..
 cmake --build . --config Release
-./bin/main ../img/phototest.tif
+./bin/Release/main ../img/phototest.tif
 ```
