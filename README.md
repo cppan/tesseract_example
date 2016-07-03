@@ -2,7 +2,7 @@
 
 A very basic Tesseract-OCR example with C++ Archive Network building.
 
-## Building & Testing
+## Building
 
 Supported OS: Windows (32, 64).
 
@@ -21,5 +21,4 @@ cppan
 mkdir build && cd build
 cmake ..
 cmake --build . --config Release
-./bin/Release/main ../img/phototest.tif
 ```
