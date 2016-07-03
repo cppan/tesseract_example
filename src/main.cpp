@@ -1,0 +1,51 @@
+#include <exception>
+#include <iostream>
+#include <memory>
+
+#include <allheaders.h>
+#include <baseapi.h>
+
+int main(int argc, char *argv[])
+try
+{
+    if (argc == 1)
+        return 1;
+
+    tesseract::TessBaseAPI tess;
+
+    if (tess.Init("./tessdata", "eng"))
+    {
+        std::cout << "OCRTesseract: Could not initialize tesseract." << std::endl;
+        return 1;
+    }
+
+    // setup
+    tess.SetPageSegMode(tesseract::PageSegMode::PSM_AUTO);
+    tess.SetVariable("save_best_choices", "T");
+
+    // read image
+    auto pixs = pixRead(argv[1]);
+    if (!pixs)
+    {
+        std::cout << "Cannot open input file: " << argv[1] << std::endl;
+        return 1;
+    }
+
+    // recognize
+    tess.SetImage(pixs);
+    tess.Recognize(0);
+
+    // get result and delete[] returned char* string
+    std::cout << std::unique_ptr<char[]>(tess.GetUTF8Text()).get() << std::endl;
+
+    // cleanup
+    tess.Clear();
+    pixDestroy(&pixs);
+
+    return 0;
+}
+catch (const std::exception &e)
+{
+    std::cerr << e.what() << std::endl;
+    return 1;
+}
