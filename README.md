@@ -25,7 +25,6 @@ cmake --build . --config Release
 
 ## Testing
 
-Download tesseract english data to `tessdata` dir near the `main` binary, copy test image `img/phototest.tif` and run
-```
-main phototest.tif
-```
+1. Download tesseract english data to `tessdata` dir near the `main` binary.
+2. Copy test image `img/phototest.tif`
+3. Run ``main phototest.tif``
