@@ -2,7 +2,11 @@
 
 A very basic Tesseract-OCR example with C++ Archive Network building.
 
-## Building & Testing
+## Building
+
+Supported OS: Windows (32, 64).
+
+Linux and macOS may fail because of issues with dependent image packages.
 
 Prerequisites:
 
@@ -17,5 +21,10 @@ cppan
 mkdir build && cd build
 cmake ..
 cmake --build . --config Release
-./bin/main ../img/phototest.tif
 ```
+
+## Testing
+
+1. Download tesseract english data to `tessdata` dir near the `main` binary.
+2. Copy test image `img/phototest.tif`
+3. Run ``main phototest.tif``

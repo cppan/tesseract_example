@@ -1,8 +1,8 @@
 #include <iostream>
 #include <memory>
 
-#include <allheaders.h>
-#include <baseapi.h>
+#include <allheaders.h> // leptonica main header for image io
+#include <baseapi.h> // tesseract main header
 
 int main(int argc, char *argv[])
 {
