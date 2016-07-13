@@ -4,9 +4,7 @@ A very basic Tesseract-OCR example with C++ Archive Network building.
 
 ## Building
 
-Supported OS: Windows (32, 64).
-
-Linux and macOS may fail because of issues with dependent image packages.
+Supported OS: Windows, Linux.
 
 Prerequisites:
 
