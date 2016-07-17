@@ -24,6 +24,3 @@ add_subdirectory(cppan)
 
 add_executable(main src/main.cpp)
 target_link_libraries(main cppan)
-if (WIN32)
-target_link_libraries(main Ws2_32)
-endif()
