@@ -6,6 +6,8 @@ A very basic Tesseract-OCR example with C++ Archive Network building.
 
 Supported OS: Windows, Linux.
 
+### Windows
+
 Prerequisites:
 
 1. Download git, cmake and add them to PATH
@@ -19,6 +21,22 @@ cppan
 mkdir build && cd build
 cmake ..
 cmake --build . --config Release
+```
+
+### Linux
+
+Prerequisites:
+
+1. Install git, cmake, the latest CPPAN (https://cppan.org/) client from https://cppan.org/client/ (.deb or .rpm client for your system, gcc-5 ABI is required).
+2. Run
+
+```
+git clone https://github.com/cppan/tesseract_example tesseract_example
+cd tesseract_example
+cppan
+mkdir build && cd build
+cmake ..
+make -j4
 ```
 
 ## Testing
