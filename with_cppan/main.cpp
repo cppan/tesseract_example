@@ -1,4 +1,7 @@
 /*
+local_settings:
+  build:
+    silent: false
 dependencies:
   # remove the next line if you need only tesseract dependency
   # e.g. when using other image library - opencv or something else
