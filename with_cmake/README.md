@@ -1,7 +1,5 @@
 # Tesseract Example
 
-A very basic Tesseract-OCR example with C++ Archive Network building.
-
 ## Building
 
 ### Windows
@@ -14,7 +12,7 @@ Prerequisites:
 
 ```
 git clone https://github.com/cppan/tesseract_example tesseract_example
-cd tesseract_example
+cd tesseract_example/with_cmake
 cppan
 mkdir build && cd build
 cmake ..
@@ -30,7 +28,7 @@ Prerequisites:
 
 ```
 git clone https://github.com/cppan/tesseract_example tesseract_example
-cd tesseract_example
+cd tesseract_example/with_cmake
 cppan
 mkdir build && cd build
 cmake ..
