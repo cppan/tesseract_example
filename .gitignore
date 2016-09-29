@@ -1,3 +1,6 @@
-/build*
-/cppan
-/win*
+build*
+cppan
+win*
+*.lnk
+*.exe
+.cppan
