@@ -2,6 +2,8 @@
 
 ## Building
 
+Before building take a look at `cppan.yml` file. Create a local copy of it in your project structure.
+
 ### Windows
 
 Prerequisites:
