@@ -5,8 +5,8 @@ local_settings:
 dependencies:
   # remove the next line if you need only tesseract dependency
   # e.g. when using other image library - opencv or something else
-  pvt.cppan.demo.leptonica: master
-  pvt.cppan.demo.tesseract: master
+  pvt.cppan.demo.danbloomberg.leptonica: master
+  pvt.cppan.demo.google.tesseract.tesseract: master
 */
 
 #include <iostream>
