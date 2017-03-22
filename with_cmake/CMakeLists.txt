@@ -22,7 +22,10 @@ else()
 endif()
 
 #set(CPPAN_BUILD_SHARED_LIBS ON)
-add_subdirectory(cppan)
+add_subdirectory(.cppan)
 
 add_executable(main src/main.cpp)
-target_link_libraries(main cppan)
+target_link_libraries(main
+    pvt.cppan.demo.google.tesseract.libtesseract
+    pvt.cppan.demo.danbloomberg.leptonica
+)
