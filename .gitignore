@@ -1,4 +1,5 @@
 build*
+bin*
 cppan
 win*
 *.lnk
