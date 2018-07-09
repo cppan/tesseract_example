@@ -40,5 +40,5 @@ make -j4
 ## Testing
 
 1. Download tesseract english data to `tessdata` dir near the `main` binary.
-2. Copy test image `img/phototest.tif`
+2. Copy test image `phototest.tif` to working dir.
 3. Run ``main phototest.tif``
